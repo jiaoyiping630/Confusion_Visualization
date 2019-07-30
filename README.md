@@ -34,7 +34,7 @@ conf_visual = Confusion_Visualizer(train_confusion_path, valid_confusion_path,
 
 ,where you pass two CxCxT tensors (or two pkl file which store CxCxT ndarray, or two directory contain pkl files from 0.pkl to {T-1}.pkl, each stores CxC matrix), and the name of classes(optional).
 
-C[i,j] = cij means cij samples of class i, is classified as class j. That is to say, the row id is ground-truth, col id is prediction.
+C[i,j] = cij means cij **samples** of class i, is classified as class j. That is to say, the row id is ground-truth, col id is prediction. (In heatmap, it is normalized by row summation)
 
 
 ## Dependency
